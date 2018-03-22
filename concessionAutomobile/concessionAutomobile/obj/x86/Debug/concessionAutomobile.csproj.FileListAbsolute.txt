@@ -1,0 +1,5 @@
+U:\Slam4\C#\concessionAutomobile\concessionAutomobile\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\C#\concessionAutomobile\concessionAutomobile\bin\Debug\concessionAutomobile.exe
+U:\Slam4\C#\concessionAutomobile\concessionAutomobile\bin\Debug\concessionAutomobile.pdb
+U:\Slam4\C#\concessionAutomobile\concessionAutomobile\obj\x86\Debug\concessionAutomobile.exe
+U:\Slam4\C#\concessionAutomobile\concessionAutomobile\obj\x86\Debug\concessionAutomobile.pdb
