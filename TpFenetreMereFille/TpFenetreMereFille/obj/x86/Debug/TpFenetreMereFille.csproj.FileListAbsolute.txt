@@ -1,0 +1,22 @@
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.FFille.resources
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.Mère.resources
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.Properties.Resources.resources
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\bin\Debug\TpFenetreMereFille.exe
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\bin\Debug\TpFenetreMereFille.pdb
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.exe
+C:\Users\adminSio\Documents\SIO2\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.pdb
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.exe
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.FFille.resources
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.Mère.resources
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.Properties.Resources.resources
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\GenerateResource.read.1.tlog
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\GenerateResource.write.1.tlog
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\bin\Debug\TpFenetreMereFille.exe
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\bin\Debug\TpFenetreMereFille.pdb
+U:\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.pdb
+G:\Lycée jean jacques rousseau\BTS SIO 2ème année\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.exe
+G:\Lycée jean jacques rousseau\BTS SIO 2ème année\Slam4\TpFenetreMereFille\TpFenetreMereFille\obj\x86\Debug\TpFenetreMereFille.pdb
