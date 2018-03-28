@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="13495280-e6ec-4f87-98ca-aecaa3920fb6" name="Exercice3" linkedPackageId="6341cb09-71cd-448f-a91f-5432285735e7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1f6cf5c3-40a6-4781-b2aa-610aeaabdc88">
+      <profileInstance Id="d95bb19d-2c71-468d-a7da-ffaf40843755" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="37b236de-358f-4602-bc41-87142fb7faf3">
+      <profileInstance Id="418ea7eb-3bd7-4bc3-b82e-564b58af3b4e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="229ca3bf-c8d9-496f-abd7-f76c533f72ed" name="Pays" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="489ea0e1-045e-4be2-ba0f-dd9fdd0b3fcb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54269547-6e2f-4180-871d-3feb63a2a143" name="Pakistan" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f6856b40-692f-4108-9507-e91bde458ced" />
+        <targetEnds>
+          <association Id="ed6831ac-8b68-4e60-b4f5-0da6af60cac8" isDerived="false" sourceEndRoleName="" targetEndRoleName="possède" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7eed1f71-4898-4def-a5eb-e4a2b3ba72b9" LastKnownName="Islamabad" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b72bb6a-65d3-4c00-a9b2-e749f96087f1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="69c1c078-d1c8-44f4-8cec-974d131e5fed" name="Lower" value=".">
+                      <elementDefinition Id="b84ece36-71d8-4e42-a69b-f1e1b4a6cb24" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b6964071-1bbb-4629-a47f-073817e51f2b" name="Upper" value=".">
+                      <elementDefinition Id="280dddbc-1e93-4fc8-b8d2-d65501bea013" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cd34412c-8f86-4b51-93bb-5a60cef2390a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c1bbfb9-83fa-47c5-8c0c-2886bef91cc9" name="possède" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="509a78cd-71f3-4c83-a2d0-4df52beef51e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="96c72b6f-ba17-4b33-b829-60b91d2459b3" />
+          </association>
+          <association Id="94661e42-22f8-4613-a145-d2fed895f519" isDerived="false" sourceEndRoleName="Pakistan" targetEndRoleName="Pays" isLeaf="false" isAbstract="false">
+            <classMoniker Id="229ca3bf-c8d9-496f-abd7-f76c533f72ed" LastKnownName="Pays" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da12e9bd-2676-4d15-b2a8-1234a88e7139" name="Pakistan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7979b20-f5fd-46a3-8a91-9e56b4370498" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a295c22-ea4a-4478-9643-6ce5db167e67" name="Pays" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="184f0f1b-a53c-4d6d-8eae-d9c927f4f1ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f967e6b-9138-4fc0-a357-30163de590a9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="41f22da6-3ca1-4f59-afe7-403ddef10c0e" name="Inde" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97055443-ae58-4412-a849-22c78488fb88" />
+        <targetEnds>
+          <association Id="60ecca48-182e-43e4-968d-103c5668e16b" isDerived="false" sourceEndRoleName="" targetEndRoleName="possède" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6a43668b-7923-4d27-9d4f-4b5d38b3053f" LastKnownName="newDelhi" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5bb56a1-7928-4ccc-ac49-a0e305ff63a0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="61ce879f-28fb-4356-acfd-98f0c3d1a66a" name="Lower" value=".">
+                      <elementDefinition Id="d1bb2866-6961-4165-bdcd-62f5714deee2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="105cd6cc-c889-4d83-9bb5-c1bfbbff22d9" name="Upper" value=".">
+                      <elementDefinition Id="712c3213-0774-45d8-b48b-a1de79040ff6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="99d5cad9-3309-4083-ad76-04319f9b15c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75b9dde7-dfd6-409d-bb83-d1c75933a4f2" name="possède" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a450207e-213e-493e-9536-61fc43981f49" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e21c526-7848-4d2f-a0aa-d5172200a3a6" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8186ecbe-4766-4ed7-876c-ea8b7b3da363" name="Chine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b412f312-cd98-4fac-8ef0-f7871fac5259" />
+        <targetEnds>
+          <association Id="8105084d-eede-43a3-83eb-e6301844891e" isDerived="false" sourceEndRoleName="" targetEndRoleName="possède" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d45b99d7-214c-40ea-a0b1-b05f7020b3ae" LastKnownName="Pékin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5c475cf-dc1d-4261-b22f-378d67a4bdc1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f0d23c6f-1cae-4de0-83f6-d9494caeb4d7" name="Lower" value=".">
+                      <elementDefinition Id="2c21a00c-b299-4595-8495-9583ce472c33" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9b490b05-1c8b-4a1d-8aae-2028c841f593" name="Upper" value=".">
+                      <elementDefinition Id="a6e72f51-9d97-4a7a-b627-f1805f256555" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3c257665-54c2-45a6-b651-aee890de8cf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d680d5af-a3c1-40fd-b941-45c467d96146" name="possède" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d2dbdf77-73da-47c5-ac41-00280d7b2bda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c5dd5df-f2e8-41f2-bbb0-7867a975bb16" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7eed1f71-4898-4def-a5eb-e4a2b3ba72b9" name="Islamabad" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1088580b-8ae5-425c-af8d-88f897923bab" />
+        <targetEnds>
+          <association Id="ac0d8294-4777-4f3e-bcdb-cfa846e79799" isDerived="false" sourceEndRoleName="Islamabad" targetEndRoleName="Capitale" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8730fdf8-f739-447e-b20e-6641cd1e56cb" LastKnownName="Capitale" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c5e191f-b314-493c-8dfe-00e6674d0634" name="Islamabad" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="983dbcc2-6015-434c-8efe-6ca35dc12b17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="99e982f4-512b-4b16-9552-2f58288b650a" name="Capitale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3ec24541-732f-4bb1-9cf2-ee6119809188" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f45e986-95bb-41bd-9a6d-537292bfeca8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8730fdf8-f739-447e-b20e-6641cd1e56cb" name="Capitale" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9d0b230-25b6-40d4-8680-e7f5691ae45d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a43668b-7923-4d27-9d4f-4b5d38b3053f" name="newDelhi" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9232ef0b-6076-4e94-91fa-776d31568fab" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d45b99d7-214c-40ea-a0b1-b05f7020b3ae" name="Pékin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ada68769-c7b8-42f5-b929-7554a29f5772" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6341cb09-71cd-448f-a91f-5432285735e7" name="Exercice3-">
+    <elementDefinition Id="a9f3e433-0f78-4f52-b642-0b034ec7b3bc" />
+  </package>
+</logicalClassDesignerModel>
