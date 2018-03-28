@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a8e5f7d8-f22b-491d-a4d2-5ce3c7ae6d0f" name="Ex1StationService" linkedPackageId="22662648-a994-40b2-96f6-a55ce59c499c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="d888b1b3-11c3-4fad-91bf-e8791cb04b16">
+      <profileInstance Id="e89b9c86-18e2-43c4-b074-d3fe824da412" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="688236bc-5820-4d91-be80-c66c259e0cee">
+      <profileInstance Id="5ef4b22d-8239-404d-bdd5-0f7bc8ff0deb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4e12a9e5-6c28-48ff-8e8e-1042507c407e" name="Client" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7912a307-71f0-4980-af0c-c75a2e5a6678" />
+        <targetEnds>
+          <association Id="35e8af3f-e69c-438a-982a-3a81addab9ed" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Prendre le pistolet accroché à la pompe" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a4fe0d8c-ac43-458b-a129-2f0143262108" LastKnownName="Prendre le pistolet accroché à la pompe" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c97a478e-0cbf-4f03-9911-c90f1f244a2d" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29464375-7dd9-44ae-9158-ac1b1b1221f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="869815ab-2de7-4eba-b12d-2972d4ed7dcb" name="Prendre le pistolet accroché à la pompe" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fe047753-7120-4ad8-8657-f43fb17bdcee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3d37e245-6bb6-4c7c-a48a-a72a7d34e599" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ec957581-1619-46fd-ac28-258cd716b967" name="Station service" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a4fe0d8c-ac43-458b-a129-2f0143262108" name="Prendre le pistolet accroché à la pompe" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3df3852d-6ced-4e85-be62-238410e2ae75" />
+        <additions>
+          <include Id="6d094340-cff2-416e-a9da-d6918d7ebdbd">
+            <useCaseMoniker Id="9677771c-d73b-4483-9b46-d178f35e394e" LastKnownName="Appuyer sur la gâchette" />
+            <elementDefinition Id="0bcfd022-4366-4189-80cf-69cce8754aa9" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="ec957581-1619-46fd-ac28-258cd716b967" LastKnownName="Station service" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9677771c-d73b-4483-9b46-d178f35e394e" name="Appuyer sur la gâchette" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de005e6c-51f1-4e69-b94c-82154b2a907e" />
+        <additions>
+          <include Id="2947ba4a-2636-40ca-9918-85f34783a870">
+            <useCaseMoniker Id="dfea0d63-8642-4d94-981d-f2088ec68334" LastKnownName="Prendre de l'essence" />
+            <elementDefinition Id="e5db08b8-2348-4816-8a7a-f5552b479dff" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="ec957581-1619-46fd-ac28-258cd716b967" LastKnownName="Station service" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dfea0d63-8642-4d94-981d-f2088ec68334" name="Prendre de l'essence" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ddde3f78-bc8d-467a-80b1-1ca11f1d1dcb" />
+        <subjects>
+          <subsystemMoniker Id="ec957581-1619-46fd-ac28-258cd716b967" LastKnownName="Station service" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="3715a736-b982-4b89-adb6-1c96b4240f0c" name="Pompiste" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce262316-6bbc-4994-8d23-39aa69e371b6" />
+        <generalsInternal>
+          <generalization Id="26dd3f52-2da4-424f-b90a-3e3188a67fae" isSubstitutable="false">
+            <actorMoniker Id="4e12a9e5-6c28-48ff-8e8e-1042507c407e" LastKnownName="Client" />
+            <elementDefinition Id="9d64008d-4cb5-4f8e-abe1-3ea7e47ff413" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca5ec6c9-890e-45e7-92b7-47bc815df407" name="Gérant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="06457cb8-4927-44df-863c-cf6ad135da60" />
+        <generalsInternal>
+          <generalization Id="fa6f69df-8447-4baa-84c8-3862badddee4" isSubstitutable="false">
+            <actorMoniker Id="ef46b3b3-b8d7-4bc9-ad94-9a738bc594c0" LastKnownName="Chef d'atelier" />
+            <elementDefinition Id="bcbb0e57-c82b-4f83-985b-44b7e6c3ef36" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="7f7cf872-113a-4a70-987e-120665964971" isDerived="false" sourceEndRoleName="Gérant" targetEndRoleName="Opérations de gestion" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d76100e1-4415-430f-8fda-862e1e505de9" LastKnownName="Opérations de gestion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="266600f0-b5a6-4bc5-8362-f5e192d3857b" name="Gérant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2cdbfe77-94eb-4f70-b776-414aa4046dbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="813d5cc1-65dc-46a1-8a82-ef5b4b06fb01" name="Opérations de gestion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcc2eb1b-c172-4e7e-8c56-69df91d2b932" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85c429fc-638e-4384-b5d7-142083fb979d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d76100e1-4415-430f-8fda-862e1e505de9" name="Opérations de gestion" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7173a092-dd3d-409b-b710-9a9f3112f09f" />
+        <subjects>
+          <subsystemMoniker Id="ec957581-1619-46fd-ac28-258cd716b967" LastKnownName="Station service" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="5583a922-9753-4c37-bad4-e5c8e707a4f5" name="Petit atelier entretien" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68b06274-24bd-4a90-95bf-6f85c2f974af" />
+        <subjects>
+          <subsystemMoniker Id="ec957581-1619-46fd-ac28-258cd716b967" LastKnownName="Station service" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="605740f0-4847-4fec-91bc-2c0cddf53172" name="Mécanicien" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d742985-08ac-426c-9be7-ff4d24a41c94" />
+        <targetEnds>
+          <association Id="43c32d17-fccb-41fc-8fd9-2cd262dd5214" isDerived="false" sourceEndRoleName="Mécanicien" targetEndRoleName="Petit atelier entretien" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5583a922-9753-4c37-bad4-e5c8e707a4f5" LastKnownName="Petit atelier entretien" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="733b8db9-8135-4c20-a7f2-819288848b01" name="Mécanicien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60fc0216-55cc-4b67-86ef-320080db19d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1fc5ed2d-eef8-4290-9613-c8013e18cd9c" name="Petit atelier entretien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1d487d26-0fc0-41ba-8e7b-d9df1695d9e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85d60052-caf6-4849-b9ea-dd19a5963b2b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ef46b3b3-b8d7-4bc9-ad94-9a738bc594c0" name="Chef d'atelier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61bdc8ce-566f-4806-ae9c-92850b872749" />
+        <generalsInternal>
+          <generalization Id="ae79a05e-ec4a-45e4-bb31-949643cc6145" isSubstitutable="false">
+            <actorMoniker Id="605740f0-4847-4fec-91bc-2c0cddf53172" LastKnownName="Mécanicien" />
+            <elementDefinition Id="0443ddf1-a24e-42cb-b931-7fc4e940ee29" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="f1a25124-bd9e-4283-9539-18b2f3f71752" isDerived="false" sourceEndRoleName="Chef d'atelier" targetEndRoleName="Opérations de gestion" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d76100e1-4415-430f-8fda-862e1e505de9" LastKnownName="Opérations de gestion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="635e7236-e549-4bcb-9f3a-c03233a9f9c6" name="Chef d'atelier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71768acf-ae78-45bd-8769-32841e6e0001" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7337cb7-30d6-4b48-b1d7-4cd593363709" name="Opérations de gestion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="141a143b-9a4f-4914-8716-39abf6f5e858" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c27bc30b-fd99-4fa1-9724-611935f1ec2f" />
+          </association>
+          <association Id="28d9481d-64da-4b55-bf00-e15a4082d09e" isDerived="false" sourceEndRoleName="Chef d'atelier" targetEndRoleName="Petit atelier entretien" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5583a922-9753-4c37-bad4-e5c8e707a4f5" LastKnownName="Petit atelier entretien" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7cce9580-a04a-41a2-a334-b26c2330b4fe" name="Chef d'atelier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54c39cbd-15f3-4683-bc4a-a235ee97d6c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c45a56d3-e144-48c2-b234-59991619c726" name="Petit atelier entretien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9c0687de-fc17-4029-9668-d7324dfca525" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d7807c65-89c7-466e-bf29-545fb6d459f4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="22662648-a994-40b2-96f6-a55ce59c499c" name="Exercice1StationService">
+    <elementDefinition Id="276ee378-f97c-4d5e-bed3-59fe3d72ec49" />
+  </package>
+</useCaseModelRoot>

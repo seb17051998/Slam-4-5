@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="276ee378-f97c-4d5e-bed3-59fe3d72ec49"
+  name="Exercice1StationService" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="4a8f58f0-ec66-401c-b1c1-640b945e51a7"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7912a307-71f0-4980-af0c-c75a2e5a6678"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3d37e245-6bb6-4c7c-a48a-a72a7d34e599"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Prendre le pistolet accroché à la pompe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3df3852d-6ced-4e85-be62-238410e2ae75"
+              LastKnownName="Prendre le pistolet accroché à la pompe"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="29464375-7dd9-44ae-9158-ac1b1b1221f2"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe047753-7120-4ad8-8657-f43fb17bdcee"
+                  name="Prendre le pistolet accroché à la pompe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+        name="Station service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3df3852d-6ced-4e85-be62-238410e2ae75"
+        name="Prendre le pistolet accroché à la pompe"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0bcfd022-4366-4189-80cf-69cce8754aa9">
+            <useCaseMoniker
+              Id="de005e6c-51f1-4e69-b94c-82154b2a907e"
+              LastKnownName="Appuyer sur la gâchette"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="de005e6c-51f1-4e69-b94c-82154b2a907e"
+        name="Appuyer sur la gâchette"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e5db08b8-2348-4816-8a7a-f5552b479dff">
+            <useCaseMoniker
+              Id="ddde3f78-bc8d-467a-80b1-1ca11f1d1dcb"
+              LastKnownName="Prendre de l'essence"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ddde3f78-bc8d-467a-80b1-1ca11f1d1dcb"
+        name="Prendre de l'essence"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ce262316-6bbc-4994-8d23-39aa69e371b6"
+        name="Pompiste"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9d64008d-4cb5-4f8e-abe1-3ea7e47ff413"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="7912a307-71f0-4980-af0c-c75a2e5a6678"
+              LastKnownName="Client"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="06457cb8-4927-44df-863c-cf6ad135da60"
+        name="Gérant"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="bcbb0e57-c82b-4f83-985b-44b7e6c3ef36"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="61bdc8ce-566f-4806-ae9c-92850b872749"
+              LastKnownName="Chef d'atelier"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="85c429fc-638e-4384-b5d7-142083fb979d"
+            isDerived="false"
+            sourceEndRoleName="Gérant"
+            targetEndRoleName="Opérations de gestion"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7173a092-dd3d-409b-b710-9a9f3112f09f"
+              LastKnownName="Opérations de gestion"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cdbfe77-94eb-4f70-b776-414aa4046dbe"
+                  name="Gérant"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcc2eb1b-c172-4e7e-8c56-69df91d2b932"
+                  name="Opérations de gestion"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7173a092-dd3d-409b-b710-9a9f3112f09f"
+        name="Opérations de gestion"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="68b06274-24bd-4a90-95bf-6f85c2f974af"
+        name="Petit atelier entretien"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="a76a3690-c4cc-4890-b271-92aa8cd6a6ef"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0d742985-08ac-426c-9be7-ff4d24a41c94"
+        name="Mécanicien"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="85d60052-caf6-4849-b9ea-dd19a5963b2b"
+            isDerived="false"
+            sourceEndRoleName="Mécanicien"
+            targetEndRoleName="Petit atelier entretien"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="68b06274-24bd-4a90-95bf-6f85c2f974af"
+              LastKnownName="Petit atelier entretien"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60fc0216-55cc-4b67-86ef-320080db19d0"
+                  name="Mécanicien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d487d26-0fc0-41ba-8e7b-d9df1695d9e9"
+                  name="Petit atelier entretien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="61bdc8ce-566f-4806-ae9c-92850b872749"
+        name="Chef d'atelier"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0443ddf1-a24e-42cb-b931-7fc4e940ee29"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="0d742985-08ac-426c-9be7-ff4d24a41c94"
+              LastKnownName="Mécanicien"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="c27bc30b-fd99-4fa1-9724-611935f1ec2f"
+            isDerived="false"
+            sourceEndRoleName="Chef d'atelier"
+            targetEndRoleName="Opérations de gestion"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7173a092-dd3d-409b-b710-9a9f3112f09f"
+              LastKnownName="Opérations de gestion"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71768acf-ae78-45bd-8769-32841e6e0001"
+                  name="Chef d'atelier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="141a143b-9a4f-4914-8716-39abf6f5e858"
+                  name="Opérations de gestion"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d7807c65-89c7-466e-bf29-545fb6d459f4"
+            isDerived="false"
+            sourceEndRoleName="Chef d'atelier"
+            targetEndRoleName="Petit atelier entretien"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="68b06274-24bd-4a90-95bf-6f85c2f974af"
+              LastKnownName="Petit atelier entretien"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54c39cbd-15f3-4683-bc4a-a235ee97d6c2"
+                  name="Chef d'atelier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c0687de-fc17-4029-9668-d7324dfca525"
+                  name="Petit atelier entretien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5085ba2a-d7a7-4b65-9a93-c6425f796575"
+        name="Agent de voyage"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="28e66180-64eb-4610-a98a-c26d770524ef"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="a97d8e49-372c-45f1-9cd8-3daeda723d3c"
+              LastKnownName="Client"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="f4126e65-34ab-4b39-8c2a-4780d064c944"
+            isDerived="false"
+            sourceEndRoleName="Agent de voyage"
+            targetEndRoleName="OrganiserVoyage"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f3abddfc-00d8-4f53-b3f5-54ec706de1e1"
+              LastKnownName="OrganiserVoyage"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6895b03a-e4f8-4a52-a3c9-a7b975e100ef"
+                  name="Agent de voyage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a134f447-4488-41ca-b660-9562c3ee3d2f"
+                  name="OrganiserVoyage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="42d780d7-045d-494b-b43a-303fe4377a54"
+        name="Agence de Voyage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="45b004f4-90f5-408f-8bb2-7da829592265"
+        name="RéserverChambreHotel"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="2ee5a876-d9d6-473e-bdf9-4e84a112c424">
+            <useCaseMoniker
+              Id="c7874b3e-b702-4947-94f8-6d0cd260f60a"
+              LastKnownName="RéserverTaxi"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c7874b3e-b702-4947-94f8-6d0cd260f60a"
+        name="RéserverTaxi"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d7f51640-23de-4ce7-8a66-ee8794f02a93">
+            <useCaseMoniker
+              Id="99b36071-1d91-4449-ac2f-f4216246f314"
+              LastKnownName="RéserverBilletTrain"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="99b36071-1d91-4449-ac2f-f4216246f314"
+        name="RéserverBilletTrain"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6c3f6f6d-626a-4e09-a1f3-ba05d434f2e4">
+            <useCaseMoniker
+              Id="0671ebee-4198-470a-8aeb-10429333f63e"
+              LastKnownName="Arrivé à la gare pour prendre le train"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f3abddfc-00d8-4f53-b3f5-54ec706de1e1"
+        name="OrganiserVoyage"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a97d8e49-372c-45f1-9cd8-3daeda723d3c"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d117d934-5da5-495b-8100-191aa70ddfb1"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="RéserverChambreHotel"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="45b004f4-90f5-408f-8bb2-7da829592265"
+              LastKnownName="RéserverChambreHotel"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6eac8f43-7dbf-439d-bc5c-9364bdd36ed8"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0979971-cb2f-4173-91f9-a49579562622"
+                  name="RéserverChambreHotel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="85654ce8-67b0-4f22-992b-0a760a884ba4"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0671ebee-4198-470a-8aeb-10429333f63e"
+        name="Arrivé à la gare pour prendre le train"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4b543028-df9c-4362-a003-ab6b48265708">
+            <useCaseMoniker
+              Id="53b445a2-159d-48e5-b8f6-a062ba886afb"
+              LastKnownName="Arrivé à la gare "
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="53b445a2-159d-48e5-b8f6-a062ba886afb"
+        name="Arrivé à la gare "
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="48c2e8ab-4a51-4c4c-b11a-c36360327f2d">
+            <useCaseMoniker
+              Id="1e1cfd21-280b-4a3b-ac01-99975fc8acc0"
+              LastKnownName="Prendre le taxi"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e1cfd21-280b-4a3b-ac01-99975fc8acc0"
+        name="Prendre le taxi"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7c736315-5ea0-4163-ad2c-04217a9cdce9">
+            <useCaseMoniker
+              Id="8ffac098-64ee-433b-87fe-c90a6846a050"
+              LastKnownName="arrivé à l'hôtel"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ffac098-64ee-433b-87fe-c90a6846a050"
+        name="arrivé à l'hôtel"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="abc397de-e41f-4f6b-a0f0-af3b88b63d58"
+        name="Etablir une facture détaillée"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="e4cd88ba-44e4-4e53-88cc-2fcc2a8f691f">
+            <useCaseMoniker
+              Id="f3abddfc-00d8-4f53-b3f5-54ec706de1e1"
+              LastKnownName="OrganiserVoyage"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="42d780d7-045d-494b-b43a-303fe4377a54"
+            LastKnownName="Agence de Voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="720b99b3-09ed-4f0f-89aa-0ab1eec8efde"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91d4d73c-508d-4da2-adcf-8b4a5e67d683"
+        name="Voyage organisé"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0e5ac620-0a73-463b-ad20-d9c869c1daf4"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e2c075f7-173c-4fe7-a118-56358abd09bf"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Prendre de l'essence"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a6157414-77ec-4bac-8f28-c0fde5c42838"
+              LastKnownName="Prendre de l'essence"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d3ba7ca-c161-415f-b9d9-71a1ebc947b4"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2087d3ff-8b4e-4367-af0d-fd48abf40715"
+                  name="Prendre de l'essence"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+        name="Station service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6157414-77ec-4bac-8f28-c0fde5c42838"
+        name="Prendre de l'essence"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bbad9c17-79c1-4e9e-b1ce-920ac9253c47"
+            isDerived="false"
+            sourceEndRoleName="Prendre de l'essence"
+            targetEndRoleName="Prendre de l'essence"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a6157414-77ec-4bac-8f28-c0fde5c42838"
+              LastKnownName="Prendre de l'essence"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae25d7d2-7be5-4ef0-8a1e-113612458955"
+                  name="Prendre de l'essence"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d678cc12-0f82-42f5-84f9-e0290a2791b6"
+                  name="Prendre de l'essence"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="b522efd5-e975-4bbb-b0a1-109caab121cf">
+            <useCaseMoniker
+              Id="024aefe0-4e3d-4b47-a88a-96f8934c0008"
+              LastKnownName="Prendre le pistolet"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="024aefe0-4e3d-4b47-a88a-96f8934c0008"
+        name="Prendre le pistolet"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c5d401c1-bb16-46d2-9057-22707d3cb0e1">
+            <useCaseMoniker
+              Id="b29b1017-e899-4eff-abcc-ed940165ec8d"
+              LastKnownName="Appuyer sur la gachette"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b29b1017-e899-4eff-abcc-ed940165ec8d"
+        name="Appuyer sur la gachette"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="22c841ef-dd5a-45b5-b19a-6abbaa3eb04e"
+        name="Gérant"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5b189b25-a87d-47e0-9725-e1c1be8e22f6"
+            isDerived="false"
+            sourceEndRoleName="Gérant"
+            targetEndRoleName="Opérations de gestions"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="195188c8-c239-4b80-b3e4-0a0ceadd06a1"
+              LastKnownName="Opérations de gestions"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15152682-c2cc-434e-bf8b-1333c5b5af86"
+                  name="Gérant"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="045b5f83-178c-4612-bbfa-5efaf1b2da80"
+                  name="Opérations de gestions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="195188c8-c239-4b80-b3e4-0a0ceadd06a1"
+        name="Opérations de gestions"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1329793a-dd14-4021-a98f-cd383f6a6c62"
+        name="Mécanicien"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a8288d7d-94b0-4d0f-93fc-70d1d6fd67f3"
+            isDerived="false"
+            sourceEndRoleName="Mécanicien"
+            targetEndRoleName="S'occupe des véhicules"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b34e9260-ab9c-403a-8b9d-7768eab9c6cb"
+              LastKnownName="S'occupe des véhicules"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4e80697-0084-4ad4-a828-6b53ddef1b9c"
+                  name="Mécanicien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dff44e66-7c20-4b6c-a46d-6e7203e23d35"
+                  name="S'occupe des véhicules"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27ce62bd-ab80-4444-b366-49a9ce7439ef"
+        name="UseCase3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b34e9260-ab9c-403a-8b9d-7768eab9c6cb"
+        name="S'occupe des véhicules"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b37d227-9b6d-42fe-baf0-b35e343bb839"
+            LastKnownName="Station service"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d2882353-e808-4212-83a3-a3ca88023e33"
+        name="Chef d'atelier"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="07b4e164-911c-4479-b5ca-f12d58df1b2a"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="22c841ef-dd5a-45b5-b19a-6abbaa3eb04e"
+              LastKnownName="Gérant"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+          <generalization
+            Id="6e7f0ac6-7f51-4f1a-83e2-3c3289af5f28"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="1329793a-dd14-4021-a98f-cd383f6a6c62"
+              LastKnownName="Mécanicien"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="adb6aaa3-a9e0-43e1-a6ae-9db5110fbc6a"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fb4f4f75-589c-4bbf-ae00-c455987af94d"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Emprunter une Vidéo"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a04535fb-8f9d-4226-8e33-a398cccdd5f7"
+              LastKnownName="Emprunter une Vidéo"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="feb28eb9-10ab-41ed-aa1e-7b09e3b7df37"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a40b5d0-ea62-429a-8844-51f9afa3827d"
+                  name="Emprunter une Vidéo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a216d561-6172-4fcb-b8d0-bedc2187df0e"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Restituer une vidéo"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d1872cd6-bf45-4605-963d-d91716038991"
+              LastKnownName="Restituer une vidéo"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="482890a1-5570-4572-ae51-8d77644b45f4"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4c0c16c-4120-4c50-a963-912ed85b2b12"
+                  name="Restituer une vidéo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="0404b501-b5ac-46f8-ad85-12a836a0e9b5"
+        name="Magasin de Location Vidéo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a04535fb-8f9d-4226-8e33-a398cccdd5f7"
+        name="Emprunter une Vidéo"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4bc3365f-8281-4583-87c8-69e2c83d22b1">
+            <useCaseMoniker
+              Id="2643fe52-fcd2-49e7-8d19-8c19db032d9e"
+              LastKnownName="Rechercher une vidéo"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="0404b501-b5ac-46f8-ad85-12a836a0e9b5"
+            LastKnownName="Magasin de Location Vidéo"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2643fe52-fcd2-49e7-8d19-8c19db032d9e"
+        name="Rechercher une vidéo"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0404b501-b5ac-46f8-ad85-12a836a0e9b5"
+            LastKnownName="Magasin de Location Vidéo"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d1872cd6-bf45-4605-963d-d91716038991"
+        name="Restituer une vidéo"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0404b501-b5ac-46f8-ad85-12a836a0e9b5"
+            LastKnownName="Magasin de Location Vidéo"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c82ab132-326e-426a-98ad-9518692df5d0"
+        name="Agence de voyage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ccc4d92b-fa65-447c-948f-d13bec1b11e4"
+        name="Agent de voyage"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5152e87c-809e-4739-bad1-56c7d5d396a9"
+            isDerived="false"
+            sourceEndRoleName="Agent de voyage"
+            targetEndRoleName="Organiser voyage"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dd49547a-8068-4a65-9812-4795069ae90e"
+              LastKnownName="Organiser voyage"
+              LastKnownLocation="Exercice1StationService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb933e30-be17-4450-be6d-8ec4ac8b6eba"
+                  name="Agent de voyage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4619626-3c5a-42d3-9cf9-5f9e449f39db"
+                  name="Organiser voyage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dd49547a-8068-4a65-9812-4795069ae90e"
+        name="Organiser voyage"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="381c313f-43c7-4d5a-b56f-988d5ef34519">
+            <useCaseMoniker
+              Id="05b1befe-a201-40ef-a4aa-c9e233ad1c4a"
+              LastKnownName="RéserverChambreHotel"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+          <include
+            Id="0443bdc9-8b08-4930-805f-b899a104f72c">
+            <useCaseMoniker
+              Id="949da268-f31b-4c0d-8d51-792b715c90e9"
+              LastKnownName="RéserverTaxi"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+          <include
+            Id="cf168641-b8eb-4fbe-a94f-b0ac30c382f6">
+            <useCaseMoniker
+              Id="4064f377-82ab-49f1-8a3c-a8095d01403d"
+              LastKnownName="RéserverBillet"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="05b1befe-a201-40ef-a4aa-c9e233ad1c4a"
+        name="RéserverChambreHotel"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="949da268-f31b-4c0d-8d51-792b715c90e9"
+        name="RéserverTaxi"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4064f377-82ab-49f1-8a3c-a8095d01403d"
+        name="RéserverBillet"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9176929a-9236-42ee-8673-733a3190677c"
+        name="Etablir une facture détaillée"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e0e5eb32-c2af-402f-8dd6-e9f3323e905b">
+            <useCaseMoniker
+              Id="dd49547a-8068-4a65-9812-4795069ae90e"
+              LastKnownName="Organiser voyage"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09539a27-c5e7-4aeb-b36f-6d06832efe25"
+        name="BilletTrain"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="f63853f1-dacd-492e-a134-83e6f03ce3ec"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="4064f377-82ab-49f1-8a3c-a8095d01403d"
+              LastKnownName="RéserverBillet"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0e6bc3c2-2dae-4278-bc14-d222e0975697"
+        name="BilletAvion"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="30391416-cdfc-4320-ab4f-5af58d741c08"
+        name="BilletAvion"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="f3ab2af9-8620-4c14-8061-d5bdfc8945aa"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="4064f377-82ab-49f1-8a3c-a8095d01403d"
+              LastKnownName="RéserverBillet"
+              LastKnownLocation="Exercice1StationService.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="c82ab132-326e-426a-98ad-9518692df5d0"
+            LastKnownName="Agence de voyage"
+            LastKnownLocation="Exercice1StationService.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
