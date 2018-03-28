@@ -1,0 +1,5 @@
+U:\Slam4\tpPOOHeritage\tpPOOHeritage\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\tpPOOHeritage\tpPOOHeritage\bin\Debug\tpPOOHeritage.exe
+U:\Slam4\tpPOOHeritage\tpPOOHeritage\bin\Debug\tpPOOHeritage.pdb
+U:\Slam4\tpPOOHeritage\tpPOOHeritage\obj\x86\Debug\tpPOOHeritage.exe
+U:\Slam4\tpPOOHeritage\tpPOOHeritage\obj\x86\Debug\tpPOOHeritage.pdb

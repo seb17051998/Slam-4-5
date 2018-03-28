@@ -1,0 +1,5 @@
+U:\Slam4\tpPOOHeritage\Exercice 2\bin\Debug\Exercice 2.exe
+U:\Slam4\tpPOOHeritage\Exercice 2\bin\Debug\Exercice 2.pdb
+U:\Slam4\tpPOOHeritage\Exercice 2\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\tpPOOHeritage\Exercice 2\obj\x86\Debug\Exercice 2.exe
+U:\Slam4\tpPOOHeritage\Exercice 2\obj\x86\Debug\Exercice 2.pdb
