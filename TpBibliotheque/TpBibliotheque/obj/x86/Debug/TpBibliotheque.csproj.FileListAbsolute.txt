@@ -1,0 +1,7 @@
+U:\Slam4\TpBibliotheque\TpBibliotheque\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\TpBibliotheque\TpBibliotheque\bin\Debug\TpBibliotheque.exe
+U:\Slam4\TpBibliotheque\TpBibliotheque\bin\Debug\TpBibliotheque.pdb
+U:\Slam4\TpBibliotheque\TpBibliotheque\obj\x86\Debug\TpBibliotheque.exe
+U:\Slam4\TpBibliotheque\TpBibliotheque\obj\x86\Debug\TpBibliotheque.pdb
+U:\Slam4\C#\TpBibliotheque\TpBibliotheque\obj\x86\Debug\TpBibliotheque.exe
+U:\Slam4\C#\TpBibliotheque\TpBibliotheque\obj\x86\Debug\TpBibliotheque.pdb
