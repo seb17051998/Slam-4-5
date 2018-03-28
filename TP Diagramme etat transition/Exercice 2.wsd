@@ -1,0 +1,29 @@
+@startuml
+[*]->Fermé:Etat initial
+state Fermé{
+
+    state Verrouiller{
+        SimpleTour:
+        DoubleTour:
+    }
+    SimpleTour->Déverrouiller:Tourner1xLaClé
+    DoubleTour->Déverrouiller:Tourner2xLaClé
+    Déverrouiller->DoubleTour:Tourner2xLaClé
+    Déverrouiller->SimpleTour:Tourner1xLaClé
+    Déverrouiller->PoignetActionné:ActionnerLapoignet
+    state PoignetActionné{
+        PousserOuTirerLaPorte-->Ouvert:Ouvrir
+        
+    }
+    Ouvert->PousserOuTirerLaPorte:Fermer
+}
+
+state Ouvert{
+    
+    
+}
+Ouvert->Franchir:Passer
+Franchir->[*]:Etat final
+
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+[*]-->Verrouiller
+state Verouiller{
+	Simple->Double
+	Double->Simple
+}
+state Déverouiller{
+	state Ouvrir{
+	
+	}
+	state Fermer{
+	
+	}
+}
+Ouvrir->Fermer
+Fermer->Ouvrir
+Simple-->Déverouiller
+Déverouiller-->Simple
+Ouvrir -> Franchir
+Franchir -> [*]
+@enduml

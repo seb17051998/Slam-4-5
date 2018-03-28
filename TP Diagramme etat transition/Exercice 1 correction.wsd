@@ -1,0 +1,18 @@
+@startuml
+[*] -> Vivant
+
+state Vivant{
+    state Mineur
+}
+state Majeur{
+    Mineur -->Célibataire : Majorité anticipée
+    Mineur -->Célibataire: Croissance
+    Célibataire-->Marié : Marier
+    Marié --> Divorcé: Divorcer
+    Divorcé --> Marié : Marier
+    Marié --> Veuf : Mort conjoint
+    Veuf -->Marié : Marier
+}
+Vivant -->Décédé:Mort
+Décédé->[*]
+@enduml

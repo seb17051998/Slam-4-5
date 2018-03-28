@@ -1,0 +1,27 @@
+@startuml
+/'state Distributeur{
+
+}'/
+[*]->CarteNonInséré:Etat Initial
+state CarteInséré{
+    state pavéSaisieCode{
+        SaisirCode:
+        CodeErroné:
+        CodeBon:
+    }
+    SaisirCode-->CodeErroné:SetromperDansleCode
+    CodeErroné-->SaisirCode:ResaisirLeCode
+    SaisirCode-->CodeBon:SaisirleBonCode
+    CodeBon-->ListeMontant:AfficheListeMontant
+    'CodeSaisit->ListeMontant:AfficheListeMontant
+    ListeMontant->ChoisirMontant:LeClientChoisitUnMontant
+    ChoisirMontant->CarteNonInséré:RendreCarte        
+}
+
+ChoisirMontant-->BilletsDélivré:BilletDélivré
+BilletsDélivré-->[*]:Etat final
+CarteNonInséré-->CarteInséré:InsertionCarte
+
+/' CarteNonInséré->CodeSaisit:SaisitduCode '/
+
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+[*]->Masquée:Etat initial : Instancié
+
+state Affiché{   
+    
+    state Minimiser{
+        
+    }
+
+    state Maximiser{
+        
+    }
+    state Normale{
+        Déplacable->Redimensionnable
+        Redimensionnable->Déplacable
+    }
+}
+state Masquée{
+
+}
+
+Masquée->Normale:Show()
+Affiché->Masquée:Hide()
+Normale->Minimiser:Réduire
+
+Minimiser->Normale:RetourAlaNormale
+Normale->Maximiser:Agrandir
+Maximiser->Normale:RetourAlaNormale
+
+Minimiser->Maximiser:Agrandir
+Affiché->Détruit
+Détruit->[*]:Etat final : Détruit
+
+/' Instancié->Icone:AfficheLiconeDansLaBarreDeTache '/
+/'Icone->Normale:AfficheFenêtre
+Normale->Agrandir:Agrandir
+Normale->Redimensionner:Redimensionner
+Normale->Déplacable:déplacer
+Redimensionner->Réduire:RéduireLaFenetre
+Réduire->Icone:AfficheLiconeDansLaBarreDeTache '/
+@enduml
