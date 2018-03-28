@@ -1,0 +1,5 @@
+U:\Slam5\C#\TPDiagrammesdeSéquence\TPDiagrammesdeSéquence\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam5\C#\TPDiagrammesdeSéquence\TPDiagrammesdeSéquence\bin\Debug\TPDiagrammesdeSéquence.exe
+U:\Slam5\C#\TPDiagrammesdeSéquence\TPDiagrammesdeSéquence\bin\Debug\TPDiagrammesdeSéquence.pdb
+U:\Slam5\C#\TPDiagrammesdeSéquence\TPDiagrammesdeSéquence\obj\x86\Debug\TPDiagrammesdeSéquence.exe
+U:\Slam5\C#\TPDiagrammesdeSéquence\TPDiagrammesdeSéquence\obj\x86\Debug\TPDiagrammesdeSéquence.pdb

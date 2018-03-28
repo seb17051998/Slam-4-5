@@ -1,0 +1,4 @@
+U:\Slam5\C#\tpRestaurantDiagSequence\tpRestaurantDiagSequence\bin\Debug\tpRestaurantDiagSequence.exe
+U:\Slam5\C#\tpRestaurantDiagSequence\tpRestaurantDiagSequence\bin\Debug\tpRestaurantDiagSequence.pdb
+U:\Slam5\C#\tpRestaurantDiagSequence\tpRestaurantDiagSequence\obj\x86\Debug\tpRestaurantDiagSequence.exe
+U:\Slam5\C#\tpRestaurantDiagSequence\tpRestaurantDiagSequence\obj\x86\Debug\tpRestaurantDiagSequence.pdb
