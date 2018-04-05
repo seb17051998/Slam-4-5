@@ -1,0 +1,15 @@
+U:\Slam4\C#\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.pdb
+U:\Slam4\C#\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\C#\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.pdb
+U:\Slam4\C#\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.dll
+U:\Slam4\C#\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.dll
+P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.pdb
+P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\ResolveAssemblyReference.cache
+P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.pdb
+P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.dll
+P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.dll
+P:\Bunel Sébastien\Slam4\Test Unitaire\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.dll
+P:\Bunel Sébastien\Slam4\Test Unitaire\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.pdb
+P:\Bunel Sébastien\Slam4\Test Unitaire\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\ResolveAssemblyReference.cache
+P:\Bunel Sébastien\Slam4\Test Unitaire\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.dll
+P:\Bunel Sébastien\Slam4\Test Unitaire\tpTestUnitaire\tpTestUnitaire\obj\x86\Debug\tpTestUnitaire.pdb

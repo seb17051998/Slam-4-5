@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0c0e8b5b-f020-47c8-ab8f-ade0b1f8cfb4" name="sbunel@R108P16HVVS 2017-12-21 10:40:21" runUser="SIO\sbunel" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6e5ca0db-52ce-482b-a71f-546599047121">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sbunel_R108P16HVVS 2017-12-21 10_40_21">
+      <DeploymentItem filename="P:\Bunel Sébastien\Slam4\tpTestUnitaire\tpTestUnitaire\bin\Debug\tpTestUnitaire.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-12-21T10:40:21.6941808+01:00" queuing="2017-12-21T10:40:22.0541952+01:00" start="2017-12-21T10:40:22.1285460+01:00" finish="2017-12-21T10:40:32.9123469+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="5" passed="4" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="R108P16HVVS" outcome="Error" timestamp="2017-12-21T10:40:32.9123469+01:00">
+        <Text>Le processus hôte du test s'est fermé de manière inattendue.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ToStringTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="fc088f0c-0d88-c0a7-85e1-7f86ad18f642">
+      <Execution id="a77fee37-f8b4-4fd9-b6a4-beb5a9650da4" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToStringTest" />
+    </UnitTest>
+    <UnitTest name="CleTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="c52f5332-71ff-335c-862c-1d556b4a6abc">
+      <Execution id="ddc8ae08-92e2-4f5d-bd94-84993ad6ca2e" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CleTest" />
+    </UnitTest>
+    <UnitTest name="ResteTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="da35aeb7-e1df-eeed-6b2d-3a17dd8140d8">
+      <Execution id="73d3da50-1f57-41fa-bc44-e7752064ec4a" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResteTest" />
+    </UnitTest>
+    <UnitTest name="Ean13ConstructorTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="e9163f9d-c849-b6ad-20b7-06b88564ed77">
+      <Execution id="c6830681-aa11-4f7a-82a2-2482d0f65cca" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Ean13ConstructorTest" />
+    </UnitTest>
+    <UnitTest name="PoidsImpairTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="3b00af88-da7f-9480-e7c9-bc6616f14c9e">
+      <Execution id="a040e180-2ffa-4aee-a211-83a922be5b0e" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PoidsImpairTest" />
+    </UnitTest>
+    <UnitTest name="PoidsPairTest" storage="p:\bunel sébastien\slam4\tptestunitaire\testean13\bin\debug\testean13.dll" id="0ca3dafd-72c1-0bd1-f5ec-d20609911a3b">
+      <Execution id="662fd05c-2b4a-4c46-b8fe-fd7faa6424bc" />
+      <TestMethod codeBase="P:/Bunel Sébastien/Slam4/tpTestUnitaire/TestEan13/bin/Debug/TestEan13.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEan13.Ean13Test, TestEan13, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PoidsPairTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0ca3dafd-72c1-0bd1-f5ec-d20609911a3b" executionId="662fd05c-2b4a-4c46-b8fe-fd7faa6424bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b00af88-da7f-9480-e7c9-bc6616f14c9e" executionId="a040e180-2ffa-4aee-a211-83a922be5b0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c52f5332-71ff-335c-862c-1d556b4a6abc" executionId="ddc8ae08-92e2-4f5d-bd94-84993ad6ca2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da35aeb7-e1df-eeed-6b2d-3a17dd8140d8" executionId="73d3da50-1f57-41fa-bc44-e7752064ec4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9163f9d-c849-b6ad-20b7-06b88564ed77" executionId="c6830681-aa11-4f7a-82a2-2482d0f65cca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc088f0c-0d88-c0a7-85e1-7f86ad18f642" executionId="a77fee37-f8b4-4fd9-b6a4-beb5a9650da4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="662fd05c-2b4a-4c46-b8fe-fd7faa6424bc" testId="0ca3dafd-72c1-0bd1-f5ec-d20609911a3b" testName="PoidsPairTest" computerName="R108P16HVVS" duration="00:00:00.0137305" startTime="2017-12-21T10:40:22.2312675+01:00" endTime="2017-12-21T10:40:22.8162909+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="662fd05c-2b4a-4c46-b8fe-fd7faa6424bc">
+    </UnitTestResult>
+    <UnitTestResult executionId="a040e180-2ffa-4aee-a211-83a922be5b0e" testId="3b00af88-da7f-9480-e7c9-bc6616f14c9e" testName="PoidsImpairTest" computerName="R108P16HVVS" duration="00:00:00.0002830" startTime="2017-12-21T10:40:22.8427050+01:00" endTime="2017-12-21T10:40:22.8485748+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a040e180-2ffa-4aee-a211-83a922be5b0e">
+    </UnitTestResult>
+    <UnitTestResult executionId="ddc8ae08-92e2-4f5d-bd94-84993ad6ca2e" testId="c52f5332-71ff-335c-862c-1d556b4a6abc" testName="CleTest" computerName="R108P16HVVS" duration="00:00:00.0002618" startTime="2017-12-21T10:40:22.8867285+01:00" endTime="2017-12-21T10:40:22.8916200+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddc8ae08-92e2-4f5d-bd94-84993ad6ca2e">
+    </UnitTestResult>
+    <UnitTestResult executionId="73d3da50-1f57-41fa-bc44-e7752064ec4a" testId="da35aeb7-e1df-eeed-6b2d-3a17dd8140d8" testName="ResteTest" computerName="R108P16HVVS" duration="00:00:00.0002527" startTime="2017-12-21T10:40:22.9366218+01:00" endTime="2017-12-21T10:40:22.9415133+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73d3da50-1f57-41fa-bc44-e7752064ec4a">
+    </UnitTestResult>
+    <UnitTestResult executionId="c6830681-aa11-4f7a-82a2-2482d0f65cca" testId="e9163f9d-c849-b6ad-20b7-06b88564ed77" testName="Ean13ConstructorTest" computerName="R108P16HVVS" duration="00:00:09.9258318" startTime="2017-12-21T10:40:22.9865151+01:00" endTime="2017-12-21T10:40:32.9123469+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6830681-aa11-4f7a-82a2-2482d0f65cca">
+    </UnitTestResult>
+    <UnitTestResult executionId="a77fee37-f8b4-4fd9-b6a4-beb5a9650da4" testId="fc088f0c-0d88-c0a7-85e1-7f86ad18f642" testName="ToStringTest" computerName="R108P16HVVS" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a77fee37-f8b4-4fd9-b6a4-beb5a9650da4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

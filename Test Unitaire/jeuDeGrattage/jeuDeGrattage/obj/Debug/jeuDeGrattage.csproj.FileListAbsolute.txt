@@ -1,0 +1,5 @@
+P:\Bunel Sébastien\Slam4\Test Unitaire\jeuDeGrattage\jeuDeGrattage\bin\Debug\jeuDeGrattage.dll
+P:\Bunel Sébastien\Slam4\Test Unitaire\jeuDeGrattage\jeuDeGrattage\bin\Debug\jeuDeGrattage.pdb
+P:\Bunel Sébastien\Slam4\Test Unitaire\jeuDeGrattage\jeuDeGrattage\obj\Debug\ResolveAssemblyReference.cache
+P:\Bunel Sébastien\Slam4\Test Unitaire\jeuDeGrattage\jeuDeGrattage\obj\Debug\jeuDeGrattage.dll
+P:\Bunel Sébastien\Slam4\Test Unitaire\jeuDeGrattage\jeuDeGrattage\obj\Debug\jeuDeGrattage.pdb
